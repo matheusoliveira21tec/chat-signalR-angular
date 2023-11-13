@@ -13,7 +13,7 @@ public class ChatController : ControllerBase
     {
         _chatService = chatService;   
     }
-    [HttpPost("resgister-user")]
+    [HttpPost("register-user")]
     public IActionResult RegisterUser(UserDto model)
     {
         if (_chatService.AddUserToList(model.Name))
